@@ -24,19 +24,19 @@
   &.bs-popover-top {
     margin-top: -$popover-arrow-width;
 
-    .arrow::before,
-    .arrow::after {
+    ::before,
+    ::after {
       left: 50%;
       border-bottom-width: 0;
     }
 
-    .arrow::before {
+    ::before {
       bottom: -$popover-arrow-outer-width;
       margin-left: -$popover-arrow-outer-width;
       border-top-color: $popover-arrow-outer-color;
     }
 
-    .arrow::after {
+    ::after {
       bottom: -($popover-arrow-outer-width - 1);
       margin-left: -$popover-arrow-width;
       border-top-color: $popover-arrow-color;
@@ -46,19 +46,19 @@
   &.bs-popover-right {
     margin-left: $popover-arrow-width;
 
-    .arrow::before,
-    .arrow::after {
+    ::before,
+    ::after {
       top: 50%;
       border-left-width: 0;
     }
 
-    .arrow::before {
+    ::before {
       left: -$popover-arrow-outer-width;
       margin-top: -$popover-arrow-outer-width;
       border-right-color: $popover-arrow-outer-color;
     }
 
-    .arrow::after {
+    ::after {
       left: -($popover-arrow-outer-width - 1);
       margin-top: -($popover-arrow-outer-width - 1);
       border-right-color: $popover-arrow-color;
@@ -68,19 +68,19 @@
   &.bs-popover-bottom {
     margin-top: $popover-arrow-width;
 
-    .arrow::before,
-    .arrow::after {
+    ::before,
+    ::after {
       left: 50%;
       border-top-width: 0;
     }
 
-    .arrow::before {
+    ::before {
       top: -$popover-arrow-outer-width;
       margin-left: -$popover-arrow-outer-width;
       border-bottom-color: $popover-arrow-outer-color;
     }
 
-    .arrow::after {
+    ::after {
       top: -($popover-arrow-outer-width - 1);
       margin-left: -$popover-arrow-width;
       border-bottom-color: $popover-title-bg;
@@ -100,21 +100,21 @@
   }
 
   &.bs-popover-left {
-    margin-left: -$popover-arrow-width;
+    margin-right: $popover-arrow-width;
 
-    .arrow::before,
-    .arrow::after {
+    ::before,
+    ::after {
       top: 50%;
       border-right-width: 0;
     }
 
-    .arrow::before {
+    ::before {
       right: -$popover-arrow-outer-width;
       margin-top: -$popover-arrow-outer-width;
       border-left-color: $popover-arrow-outer-color;
     }
 
-    .arrow::after {
+    ::after {
       right: -($popover-arrow-outer-width - 1);
       margin-top: -($popover-arrow-outer-width - 1);
       border-left-color: $popover-arrow-color;

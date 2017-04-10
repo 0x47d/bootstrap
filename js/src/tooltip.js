@@ -285,10 +285,8 @@ const Tooltip = (($) => {
 
         this._popper = new Popper(this.element, tip, {
           placement : attachment,
-          modifiers : {
-            offset : {
-              offset : this.config.offset
-            }
+          offsets : {
+            popper : this.config.offset
           }
         })
 
